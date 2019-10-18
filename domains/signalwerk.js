@@ -3,6 +3,7 @@ D(
   REG_NONE,
   DnsProvider(CLOUDFLARE),
   A("api", "104.219.53.78", TTL(1)),
+  A("TTESTTT", "87.230.27.223", TTL(1)),
   A("digital", "87.230.27.223", TTL(1)),
   A("mail", "176.28.14.63", TTL(1)),
   A("media", "87.230.27.223", TTL(1)),
