@@ -4,9 +4,7 @@ D(
   DnsProvider(CLOUDFLARE),
   A("api", "104.219.53.78", TTL(1)),
   A("digital", "87.230.27.223", TTL(1)),
-  A("mail", "176.28.14.63", TTL(1)),
   A("media", "87.230.27.223", TTL(1)),
-  A("mx0", "176.28.14.63", TTL(1)),
   A("paramatters", "87.230.27.223", TTL(1)),
   A("podcast", "87.230.27.223", TTL(1)),
   A("sh", "87.230.27.223", TTL(1)),
@@ -34,7 +32,10 @@ D(
     TTL(1)
   ),
 
+  // MAIL
+  A("mx0", "176.28.14.63", TTL(1)),
   MX("@", 50, "mx0.signalwerk.ch.", TTL(1)),
+  CNAME("mail", "mx0.signalwerk.ch.", TTL(1)),
 
   TXT("@", "v=spf1 a mx ip4:176.28.14.63 ~all", TTL(1))
 );
