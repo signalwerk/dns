@@ -9,5 +9,6 @@ var GITHUB_IP4_A = "185.199.111.153";
 
 require("domains/moire.js");
 require("domains/signalwerk.js");
+require("domains/caminantes-grafico.js");
 require("domains/grafikklang.js");
 require("domains/myriad.js");
