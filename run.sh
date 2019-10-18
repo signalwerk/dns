@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "-- dnscontrol check"
+echo "ℹ️  DNSControl check"
 
 docker run --rm -it \
 -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
@@ -8,9 +8,8 @@ docker run --rm -it \
 -v $(pwd)/:/dns/ stackexchange/dnscontrol \
 dnscontrol check
 
-
-if [[ $TRAVIS_BRANCH == 'master' ]]
-  echo "-- dnscontrol push"
+if [[ $TRAVIS_BRANCH == 'master' ]]; then
+  echo "ℹ️  DNSControl push"
 
   docker run --rm -it \
   -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
@@ -18,7 +17,7 @@ if [[ $TRAVIS_BRANCH == 'master' ]]
   -v $(pwd)/:/dns/ stackexchange/dnscontrol \
   dnscontrol push
 else
-  echo "-- dnscontrol preview"
+  echo "ℹ️  DNSControl preview"
 
   docker run --rm -it \
   -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
