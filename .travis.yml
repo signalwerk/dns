@@ -1,0 +1,11 @@
+language: minimal
+
+services:
+  - docker
+
+script:
+  - bash ./run.sh
+
+branches:
+  only:
+    - master

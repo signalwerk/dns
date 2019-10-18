@@ -1,0 +1,30 @@
+D(
+  "signalwerk.ch",
+  REG_NONE,
+  DnsProvider(CLOUDFLARE),
+  A("api", "104.219.53.78", TTL(1)),
+  A("digital", "87.230.27.223", TTL(1)),
+  A("mail", "176.28.14.63", TTL(1)),
+  A("media", "87.230.27.223", TTL(1)),
+  A("mx0", "176.28.14.63", TTL(1)),
+  A("paramatters", "87.230.27.223", TTL(1)),
+  A("podcast", "87.230.27.223", TTL(1)),
+  A("sh", "87.230.27.223", TTL(1)),
+  A("signage", "87.230.27.223", TTL(1)),
+  A("@", "87.230.27.223", TTL(1)),
+  A("ssh-dns", "167.71.107.60", TTL(1)),
+  A("webmail", "176.28.14.63", TTL(1)),
+  CNAME("ci", "ssh-dns.signalwerk.ch.", TTL(1)),
+  CNAME("foo", "ssh-dns.signalwerk.ch.", TTL(1)),
+  CNAME("ftp", "signalwerk.ch.", TTL(1)),
+  CNAME("pad", "kbp.keybaseapi.com.", TTL(1)),
+  CNAME("webtypo", "signalwerk.github.io.", TTL(1)),
+  CNAME("www", "signalwerk.ch.", TTL(1)),
+  MX("@", 50, "mx0.signalwerk.ch.", TTL(1)),
+  TXT(
+    "_keybase_pages.pad",
+    "kbp=/keybase/private/signalwerk,kbpbot/pad",
+    TTL(1)
+  ),
+  TXT("@", "v=spf1 a mx ip4:176.28.14.63 ~all", TTL(1))
+);
