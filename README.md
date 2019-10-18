@@ -8,7 +8,7 @@ If you push to `develop` you just see the preview of the changes in [Travis CI](
 
 ## Test
 ```sh
-export CLOUDFLARE_EMAIL=sh@signalwerk.ch
+export CLOUDFLARE_EMAIL=xxx
 export CLOUDFLARE_API_KEY=xxx
 dnscontrol preview
 ```
