@@ -1,0 +1,57 @@
+;;
+;; Domain:     signalwerk.ch.
+;; Exported:   2019-10-17 08:29:04
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+
+;; SOA Record
+signalwerk.ch.	3600	IN	SOA	signalwerk.ch. root.signalwerk.ch. 2032296754 7200 3600 86400 3600
+
+;; A Records
+api.signalwerk.ch.	1	IN	A	104.219.53.78
+digital.signalwerk.ch.	1	IN	A	87.230.27.223
+mail.signalwerk.ch.	1	IN	A	176.28.14.63
+media.signalwerk.ch.	1	IN	A	87.230.27.223
+mx0.signalwerk.ch.	1	IN	A	176.28.14.63
+paramatters.signalwerk.ch.	1	IN	A	87.230.27.223
+podcast.signalwerk.ch.	1	IN	A	87.230.27.223
+sh.signalwerk.ch.	1	IN	A	87.230.27.223
+signage.signalwerk.ch.	1	IN	A	87.230.27.223
+signalwerk.ch.	1	IN	A	87.230.27.223
+ssh-dns.signalwerk.ch.	1	IN	A	167.71.107.60
+webmail.signalwerk.ch.	1	IN	A	176.28.14.63
+
+;; CNAME Records
+ci.signalwerk.ch.	1	IN	CNAME	ssh-dns.signalwerk.ch.
+foo.signalwerk.ch.	1	IN	CNAME	ssh-dns.signalwerk.ch.
+ftp.signalwerk.ch.	1	IN	CNAME	signalwerk.ch.
+pad.signalwerk.ch.	1	IN	CNAME	kbp.keybaseapi.com.
+webtypo.signalwerk.ch.	1	IN	CNAME	signalwerk.github.io.
+www.signalwerk.ch.	1	IN	CNAME	signalwerk.ch.
+
+;; MX Records
+signalwerk.ch.	1	IN	MX	50 mx0.signalwerk.ch.
+
+;; TXT Records
+_keybase_pages.pad.signalwerk.ch.	1	IN	TXT	"kbp=/keybase/private/signalwerk,kbpbot/pad"
+signalwerk.ch.	1	IN	TXT	"v=spf1 a mx ip4:176.28.14.63 ~all"
