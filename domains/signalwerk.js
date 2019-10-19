@@ -3,18 +3,19 @@ D(
   REG_NONE,
   DnsProvider(CLOUDFLARE),
 
-  A("digital", "87.230.27.223", TTL(1)),
-  A("media", "87.230.27.223", TTL(1)),
-  A("paramatters", "87.230.27.223", TTL(1)),
-  A("podcast", "87.230.27.223", TTL(1)),
-  A("sh", "87.230.27.223", TTL(1)),
-  A("signage", "87.230.27.223", TTL(1)),
-  A("@", "87.230.27.223", TTL(1)),
+  A("@", HOSTEUROPE_SRV03_IP, TTL(1)),
 
+
+
+  // cname to SRV03
   CNAME("ftp", "signalwerk.ch.", TTL(1)),
-
   CNAME("www", "signalwerk.ch.", TTL(1)),
-
+  CNAME("digital", "signalwerk.ch.", TTL(1)),
+  CNAME("media", "signalwerk.ch.", TTL(1)),
+  CNAME("paramatters", "signalwerk.ch.", TTL(1)),
+  CNAME("podcast", "signalwerk.ch.", TTL(1)),
+  CNAME("sh", "signalwerk.ch.", TTL(1)),
+  CNAME("signage", "signalwerk.ch.", TTL(1)),
 
   // github-pages
   CNAME("webtypo", GITHUB_SIGNALWERK_CNAME, TTL(1)),
