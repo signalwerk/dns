@@ -5,11 +5,9 @@ D(
 
   A("@", HOSTEUROPE_SRV03_IP, TTL(1)),
 
-
-
   // cname to SRV03
-  CNAME("ftp", "signalwerk.ch.", TTL(1)),
   CNAME("www", "signalwerk.ch.", TTL(1)),
+  CNAME("ftp", "signalwerk.ch.", TTL(1)),
   CNAME("digital", "signalwerk.ch.", TTL(1)),
   CNAME("media", "signalwerk.ch.", TTL(1)),
   CNAME("paramatters", "signalwerk.ch.", TTL(1)),
