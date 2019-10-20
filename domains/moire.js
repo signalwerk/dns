@@ -3,7 +3,7 @@ D(
   REG_NONE,
   DnsProvider(CLOUDFLARE),
   A("@", HOSTEUROPE_SRV03_IP, TTL(1)),
-  CNAME("www", "moire.pub.", TTL(1))
+  CNAME("www", "@", TTL(1))
 );
 
 D(
@@ -11,5 +11,5 @@ D(
   REG_NONE,
   DnsProvider(CLOUDFLARE),
   A("@", HOSTEUROPE_SRV03_IP, TTL(1)),
-  CNAME("www", "m0ire.com.", TTL(1))
+  CNAME("www", "@", TTL(1))
 );

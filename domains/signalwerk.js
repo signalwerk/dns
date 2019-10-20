@@ -6,14 +6,14 @@ D(
   A("@", HOSTEUROPE_SRV03_IP, TTL(1)),
 
   // cname to SRV03
-  CNAME("www", "signalwerk.ch.", TTL(1)),
-  CNAME("ftp", "signalwerk.ch.", TTL(1)),
-  CNAME("digital", "signalwerk.ch.", TTL(1)),
-  CNAME("media", "signalwerk.ch.", TTL(1)),
-  CNAME("paramatters", "signalwerk.ch.", TTL(1)),
-  CNAME("podcast", "signalwerk.ch.", TTL(1)),
-  CNAME("sh", "signalwerk.ch.", TTL(1)),
-  CNAME("signage", "signalwerk.ch.", TTL(1)),
+  CNAME("www", "@", TTL(1)),
+  CNAME("ftp", "@", TTL(1)),
+  CNAME("digital", "@", TTL(1)),
+  CNAME("media", "@", TTL(1)),
+  CNAME("paramatters", "@", TTL(1)),
+  CNAME("podcast", "@", TTL(1)),
+  CNAME("sh", "@", TTL(1)),
+  CNAME("signage", "@", TTL(1)),
 
   // github-pages
   CNAME("webtypo", GITHUB_SIGNALWERK_CNAME, TTL(1)),
