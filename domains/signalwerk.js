@@ -19,7 +19,8 @@ D(
   CNAME("webtypo", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("typesetting", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("cv", GITHUB_SIGNALWERK_CNAME, TTL(1)),
-
+  CNAME("font-filler", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  
   // dyn ssh
   A("ssh-dns", "167.71.107.60", TTL(1)),
   CNAME("ci", "ssh-dns", TTL(1)),
