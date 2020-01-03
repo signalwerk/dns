@@ -21,6 +21,7 @@ D(
   CNAME("cv", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("font-filler", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("avatar", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("cal", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   
   // dyn ssh
   A("ssh-dns", "167.71.107.60", TTL(1)),
