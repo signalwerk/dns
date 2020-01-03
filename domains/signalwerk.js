@@ -22,7 +22,10 @@ D(
   CNAME("font-filler", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("avatar", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("cal", GITHUB_SIGNALWERK_CNAME, TTL(1)),
-  
+
+  // heroku
+  CNAME("notzer", "notzer.herokuapp.com", TTL(1)),
+
   // dyn ssh
   A("ssh-dns", "167.71.107.60", TTL(1)),
   CNAME("ci", "ssh-dns", TTL(1)),
