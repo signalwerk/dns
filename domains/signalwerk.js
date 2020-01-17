@@ -10,12 +10,12 @@ D(
   CNAME("ftp", "@", TTL(1)),
   CNAME("digital", "@", TTL(1)),
   CNAME("media", "@", TTL(1)),
-  CNAME("paramatters", "@", TTL(1)),
   CNAME("podcast", "@", TTL(1)),
   CNAME("sh", "@", TTL(1)),
   CNAME("signage", "@", TTL(1)),
 
   // github-pages
+  CNAME("paramatters", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("webtypo", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("typesetting", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("cv", GITHUB_SIGNALWERK_CNAME, TTL(1)),
