@@ -12,9 +12,3 @@ export CLOUDFLARE_EMAIL=xxx
 export CLOUDFLARE_API_KEY=xxx
 dnscontrol preview
 ```
-
-## prettier
-
-```sh
-prettier --write "./**/*.js"
-```
