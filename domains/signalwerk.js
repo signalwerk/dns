@@ -24,6 +24,7 @@ D(
   CNAME("cal", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("fontfiller", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("handwerk-der-gestaltung", GITHUB_SIGNALWERK_CNAME, TTL(1)), 
+  CNAME("paramatters-ui", GITHUB_SIGNALWERK_CNAME, TTL(1)), 
 
   // heroku
   CNAME("notzer", "protected-alpaca-diu2jqsd60ltaglb7kpilino.herokudns.com.", TTL(1)),
