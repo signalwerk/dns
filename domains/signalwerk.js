@@ -15,6 +15,9 @@ D(
   CNAME("signage", "@", TTL(1)),
 
   // github-pages
+  // add a CNAME file 
+  // add the full domain-name on one line (without http)
+  // xxx.signalwerk.ch
   CNAME("paramatters", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("webtypo", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("typesetting", GITHUB_SIGNALWERK_CNAME, TTL(1)),
