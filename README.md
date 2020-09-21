@@ -13,7 +13,17 @@ export CLOUDFLARE_API_KEY=xxx
 dnscontrol preview
 ```
 
-## Convert Zone-File
+## Test in Docker
+```sh
+docker run --rm -it \
+-e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
+-e CLOUDFLARE_API_KEY="$CLOUDFLARE_API_KEY" \
+-v $(pwd)/:/dns/ stackexchange/dnscontrol \
+dnscontrol preview
+
+```
+
+## Convert Zone-File in Docker
 ```sh
 docker run --rm -it \
 -e CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN" \
