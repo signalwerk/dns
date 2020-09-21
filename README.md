@@ -12,3 +12,12 @@ export CLOUDFLARE_EMAIL=xxx
 export CLOUDFLARE_API_KEY=xxx
 dnscontrol preview
 ```
+
+## Convert Zone-File
+```sh
+docker run --rm -it \
+-e CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN" \
+-v $(pwd)/:/dns/ stackexchange/dnscontrol \
+convertzone signalwerk.ch signalwerk.ch.txt > signalwerk.js
+
+```
