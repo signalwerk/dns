@@ -3,19 +3,21 @@ D(
   REG_NONE,
   DnsProvider(CLOUDFLARE),
 
-  A("@", HOSTEUROPE_SRV03_IP, TTL(1)),
+  // root & www
+  GITHUB_A,
+  CNAME("www", "@", TTL(1), { cloudflare_proxy: "on" }),
 
   // cname to SRV03
-  CNAME("www", "@", TTL(1)),
-  CNAME("ftp", "@", TTL(1)),
-  CNAME("digital", "@", TTL(1)),
-  CNAME("media", "@", TTL(1)),
-  CNAME("podcast", "@", TTL(1)),
-  CNAME("sh", "@", TTL(1)),
-  CNAME("signage", "@", TTL(1)),
+  A("srv03", HOSTEUROPE_SRV03_IP, TTL(1)),
+  CNAME("ftp", "srv03", TTL(1)),
+  CNAME("digital", "srv03", TTL(1)),
+  CNAME("media", "srv03", TTL(1)),
+  CNAME("podcast", "srv03", TTL(1)),
+  CNAME("sh", "srv03", TTL(1)),
+  CNAME("signage", "srv03", TTL(1)),
 
   // github-pages
-  // add a CNAME file 
+  // add a CNAME file
   // add the full domain-name on one line (without http)
   // xxx.signalwerk.ch
   CNAME("paramatters", GITHUB_SIGNALWERK_CNAME, TTL(1)),
@@ -26,12 +28,16 @@ D(
   CNAME("avatar", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("cal", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("fontfiller", GITHUB_SIGNALWERK_CNAME, TTL(1)),
-  CNAME("handwerk-der-gestaltung", GITHUB_SIGNALWERK_CNAME, TTL(1)), 
-  CNAME("paramatters-ui", GITHUB_SIGNALWERK_CNAME, TTL(1)), 
-  CNAME("obfuscator", GITHUB_SIGNALWERK_CNAME, TTL(1)), 
+  CNAME("handwerk-der-gestaltung", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("paramatters-ui", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("obfuscator", GITHUB_SIGNALWERK_CNAME, TTL(1)),
 
   // heroku
-  CNAME("notzer", "protected-alpaca-diu2jqsd60ltaglb7kpilino.herokudns.com.", TTL(1)),
+  CNAME(
+    "notzer",
+    "protected-alpaca-diu2jqsd60ltaglb7kpilino.herokudns.com.",
+    TTL(1)
+  ),
 
   // dyn ssh
   A("ssh-dns", "167.71.107.60", TTL(1)),
