@@ -43,7 +43,6 @@ D(
   A("ssh-dns", "167.71.107.60", TTL(1)),
   CNAME("ci", "ssh-dns", TTL(1)),
   CNAME("foo", "ssh-dns", TTL(1)),
-  CNAME("jon", "ssh-dns", TTL(1)),
 
   // keybase pad
   CNAME("pad", "kbp.keybaseapi.com.", TTL(1)),
