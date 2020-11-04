@@ -32,6 +32,7 @@ D(
   CNAME("paramatters-ui", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("obfuscator", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("docs", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("nasdaq", GITHUB_SIGNALWERK_CNAME, TTL(1)),
 
   // heroku
   CNAME(
