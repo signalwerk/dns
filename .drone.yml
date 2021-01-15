@@ -8,9 +8,21 @@ steps:
       - name: dockersock
         path: /var/run
     commands:
-      - sleep 15 # give docker enough time to start
+      - sleep 5 # give docker enough time to start
       - sh ./ci/run.sh
     environment:
       CLOUDFLARE_API_KEY:
         from_secret: "CLOUDFLARE_API_KEY"
       CLOUDFLARE_EMAIL: "sh@signalwerk.ch"
+
+services:
+  - name: docker
+    image: docker:dind
+    privileged: true
+    volumes:
+      - name: dockersock
+        path: /var/run
+
+volumes:
+  - name: dockersock
+    temp: {}
