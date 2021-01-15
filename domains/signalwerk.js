@@ -35,6 +35,7 @@ D(
   CNAME("nasdaq", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("sandra", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("notzer", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("migros-gruppe-jobs", GITHUB_SIGNALWERK_CNAME, TTL(1)),
 
   // dyn ssh
   A("ssh-dns", "167.71.107.60", TTL(1)),
