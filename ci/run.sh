@@ -2,7 +2,7 @@
 
 echo "ℹ️  DNSControl check"
 
-docker run --rm -it \
+docker run --rm \
 -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
 -e CLOUDFLARE_API_KEY="$CLOUDFLARE_API_KEY" \
 -v $(pwd)/:/dns/ stackexchange/dnscontrol \
@@ -12,7 +12,7 @@ dnscontrol check
 if [[ $DRONE_BRANCH = "master" ]]; then
   echo "ℹ️  DNSControl push"
 
-  docker run --rm -it \
+  docker run --rm \
   -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
   -e CLOUDFLARE_API_KEY="$CLOUDFLARE_API_KEY" \
   -v $(pwd)/:/dns/ stackexchange/dnscontrol \
@@ -20,7 +20,7 @@ if [[ $DRONE_BRANCH = "master" ]]; then
 else
   echo "ℹ️  DNSControl preview"
 
-  docker run --rm -it \
+  docker run --rm \
   -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
   -e CLOUDFLARE_API_KEY="$CLOUDFLARE_API_KEY" \
   -v $(pwd)/:/dns/ stackexchange/dnscontrol \
