@@ -1,0 +1,12 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: build
+    image: node:latest
+    commands:
+      - bash ./ci/run.sh
+    environment:
+      CLOUDFLARE_API_KEY:
+        from_secret: "CLOUDFLARE_API_KEY"
+      CLOUDFLARE_EMAIL: "sh@signalwerk.ch"

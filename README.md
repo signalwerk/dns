@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/signalwerk/dns.svg?branch=master)](https://travis-ci.org/signalwerk/dns)
+[![Build Status](https://ci.signalwerk.ch/api/badges/signalwerk/dns/status.svg)](https://ci.signalwerk.ch/signalwerk/dns)
 
 # DNS Sync
 Synchronize all my DNS-Records with [DNSControl](https://github.com/StackExchange/dnscontrol)
 
-## ⚠️ ATTENTION! This Repo is watched by Travis-CI and all pushes to master get synced!
-If you push to `develop` you just see the preview of the changes in [Travis CI](https://travis-ci.org/signalwerk/dns)
+## ⚠️ ATTENTION! This Repo is watched by CI and all pushes to master get synced!
+If you push to `develop` you just see the preview of the changes [here](https://ci.signalwerk.ch/signalwerk/dns)
 
 ## Test
 ```sh

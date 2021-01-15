@@ -8,7 +8,8 @@ docker run --rm -it \
 -v $(pwd)/:/dns/ stackexchange/dnscontrol \
 dnscontrol check
 
-if [[ $TRAVIS_BRANCH == 'master' ]]; then
+
+if [[ $DRONE_BRANCH = "master" ]]; then
   echo "ℹ️  DNSControl push"
 
   docker run --rm -it \
