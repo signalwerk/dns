@@ -13,3 +13,7 @@ steps:
       CLOUDFLARE_API_KEY:
         from_secret: "CLOUDFLARE_API_KEY"
       CLOUDFLARE_EMAIL: "sh@signalwerk.ch"
+
+volumes:
+  - name: dockersock
+    temp: {}
