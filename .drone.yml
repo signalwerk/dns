@@ -2,8 +2,11 @@ kind: pipeline
 name: default
 
 steps:
-  - name: build
-    image: node:latest
+  - name: publish
+    image: docker:dind
+    volumes:
+      - name: dockersock
+        path: /var/run
     commands:
       - bash ./ci/run.sh
     environment:
