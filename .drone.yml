@@ -8,6 +8,7 @@ steps:
       - name: dockersock
         path: /var/run
     commands:
+      - sleep 5 # give docker enough time to start
       - sh ./ci/run.sh
     environment:
       CLOUDFLARE_API_KEY:
