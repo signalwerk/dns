@@ -16,6 +16,9 @@ D(
   CNAME("sh", "srv03", TTL(1)),
   CNAME("signage", "srv03", TTL(1)),
 
+  //  Certification Authority Authorization (CAA) record
+  CAA("@", "issue", "letsencrypt.org"),
+
   // github-pages
   // add a CNAME file
   // add the full domain-name on one line (without http)
@@ -35,6 +38,8 @@ D(
   CNAME("nasdaq", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("sandra", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("notzer", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("ssh", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+
   CNAME("migros-gruppe-jobs", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("js-id-tutorial", GITHUB_SIGNALWERK_CNAME, TTL(1)),
 
