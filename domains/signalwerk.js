@@ -70,7 +70,7 @@ D(
 
   // local testing
   // The entire sub domain name *.local.signalwerk.ch point to 127.0.0.1
-  A("@.local", IP("127.0.0.1"), TTL(1)),
+  A("@.local", "127.0.0.1", TTL(1)),
   
   // MAIL
   A("mx0", "176.28.14.63", TTL(1)),
