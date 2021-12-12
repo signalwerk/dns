@@ -68,6 +68,10 @@ D(
     TTL(1)
   ),
 
+  // local testing
+  // The entire sub domain name *.local.signalwerk.ch point to 127.0.0.1
+  CNAME("@.local", 127.0.0.1, TTL(1)),
+  
   // MAIL
   A("mx0", "176.28.14.63", TTL(1)),
   MX("@", 50, "mx0.signalwerk.ch.", TTL(1)),
