@@ -2,6 +2,8 @@ D(
   "caminantes-grafico.org",
   REG_NONE,
   DnsProvider(CLOUDFLARE),
-  A("@", HOSTEUROPE_SRV03_IP, TTL(1)),
-  CNAME("www", "@", TTL(1))
+
+  // root & www
+  GITHUB_A,
+  CNAME("www", "@", TTL(1), { cloudflare_proxy: "on" }),
 );
