@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "ℹ️  DNSControl check"
+echo "ℹ️  Account: $CLOUDFLARE_EMAIL"
 echo "ℹ️  ref: $GITHUB_REF"
-echo "ℹ️  test: $TEST_SH"
 
 docker run --rm \
 -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
