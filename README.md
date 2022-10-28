@@ -1,10 +1,10 @@
-[![Build Status](https://ci.signalwerk.ch/api/badges/signalwerk/dns/status.svg)](https://ci.signalwerk.ch/signalwerk/dns)
+[![Build Status](https://github.com/signalwerk/dns/actions/workflows/dns.yml/badge.svg)](https://github.com/signalwerk/dns/actions)
 
 # DNS Sync
 Synchronize all my DNS-Records with [DNSControl](https://github.com/StackExchange/dnscontrol)
 
 ## ⚠️ ATTENTION! This Repo is watched by CI and all pushes to master get synced!
-If you push to `develop` you just see the preview of the changes [here](https://ci.signalwerk.ch/signalwerk/dns)
+If you push to `develop` you just see the preview of the changes [here](https://github.com/signalwerk/dns/actions)
 
 ## Test
 ```sh
