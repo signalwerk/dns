@@ -17,7 +17,8 @@ if [[ $GITHUB_REF == "refs/heads/main" ]]; then
   -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
   -e CLOUDFLARE_API_KEY="$CLOUDFLARE_API_KEY" \
   -v $(pwd)/:/dns/ stackexchange/dnscontrol \
-  dnscontrol push
+  push
+
 else
   echo "ℹ️  DNSControl preview"
 
@@ -25,6 +26,6 @@ else
   -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
   -e CLOUDFLARE_API_KEY="$CLOUDFLARE_API_KEY" \
   -v $(pwd)/:/dns/ stackexchange/dnscontrol \
-  dnscontrol preview
+  preview
 
 fi
