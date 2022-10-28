@@ -48,6 +48,9 @@ D(
   CNAME("parser", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("dos-day-2021", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("digital-typography", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("ddos2022", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("dosday2022", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("pixelfont", GITHUB_SIGNALWERK_CNAME, TTL(1)),
 
   // sfgz IAD
   CNAME("IAD2017", GITHUB_SIGNALWERK_CNAME, TTL(1)),
@@ -74,7 +77,7 @@ D(
   // local testing
   // The entire sub domain name *.local.signalwerk.ch point to 127.0.0.1
   A("*.local", "127.0.0.1", TTL(1)),
-  
+
   // MAIL
   A("mx0", "176.28.14.63", TTL(1)),
   MX("@", 50, "mx0.signalwerk.ch.", TTL(1)),

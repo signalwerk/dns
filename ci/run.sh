@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "ℹ️  DNSControl check"
+echo "ℹ️  ref: $GITHUB_REF"
 
 docker run --rm \
 -e CLOUDFLARE_EMAIL="$CLOUDFLARE_EMAIL" \
@@ -9,7 +10,7 @@ docker run --rm \
 dnscontrol check
 
 
-if [[ $DRONE_BRANCH = "master" ]]; then
+if [[ $GITHUB_REF == "refs/heads/main" ]]; then
   echo "ℹ️  DNSControl push"
 
   docker run --rm \
