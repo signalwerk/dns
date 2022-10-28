@@ -1,4 +1,4 @@
-var REG_NONE = NewRegistrar("none", "NONE");
+var REG_NONE = NewRegistrar("none");
 
 // infrastructure
 require("infrastructure/cloudflare.js");

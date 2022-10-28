@@ -1,5 +1,6 @@
 {
   "cloudflare": {
+    "TYPE": "CLOUDFLAREAPI",
     "apiuser": "$CLOUDFLARE_EMAIL",
     "apikey": "$CLOUDFLARE_API_KEY"
   }
