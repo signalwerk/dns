@@ -78,7 +78,8 @@ D(
 
   // local testing
   // The entire sub domain name *.local.signalwerk.ch point to 127.0.0.1
-  A("*.local", "127.0.0.1", TTL(1)),
+  // https://www.rfc-editor.org/rfc/rfc6761.html
+  A("*.localhost", "127.0.0.1", TTL(1)),
 
   // MAIL
   A("mx0", "176.28.14.63", TTL(1)),
