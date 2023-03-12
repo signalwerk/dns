@@ -4,6 +4,7 @@ var REG_NONE = NewRegistrar("none");
 require("infrastructure/cloudflare.js");
 require("infrastructure/hosteurope.js");
 require("infrastructure/github.js");
+require("infrastructure/hetzner.js");
 
 // domains
 require("domains/moire.js");
