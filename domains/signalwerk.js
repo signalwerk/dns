@@ -22,8 +22,12 @@ D(
   // coolify
   A("coolify", HETZNER_SRV_COOLIFY_IPv4, TTL(1)),
   AAAA("coolify", HETZNER_SRV_COOLIFY_IPv6 + "1000", TTL(1)),
+  
+  A("*.srv", HETZNER_SRV_COOLIFY_IPv4, TTL(1)),
+  AAAA("*.srv", HETZNER_SRV_COOLIFY_IPv6 + "1000", TTL(1)),  
+  
   A("typesense", HETZNER_SRV_COOLIFY_IPv4, TTL(1)),
-  AAAA("typesense", HETZNER_SRV_COOLIFY_IPv6 + "1001", TTL(1)),
+  AAAA("typesense", HETZNER_SRV_COOLIFY_IPv6 + "1000", TTL(1)),
 
   // github-pages
   // add a CNAME file
