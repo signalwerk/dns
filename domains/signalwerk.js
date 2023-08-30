@@ -11,7 +11,7 @@ D(
   A("srv03", HOSTEUROPE_SRV03_IP, TTL(1)),
   CNAME("ftp", "srv03", TTL(1)),
   CNAME("digital", "srv03", TTL(1)),
-  CNAME("media", "srv03", TTL(1)),
+  // CNAME("media", "srv03", TTL(1)),
   CNAME("podcast", "srv03", TTL(1)),
   CNAME("sh", "srv03", TTL(1)),
   CNAME("signage", "srv03", TTL(1)),
@@ -24,6 +24,8 @@ D(
   AAAA("coolify", HETZNER_SRV_COOLIFY_IPv6 + "1000", TTL(1)),
   A("typesense", HETZNER_SRV_COOLIFY_IPv4, TTL(1)),
   AAAA("typesense", HETZNER_SRV_COOLIFY_IPv6 + "1001", TTL(1)),
+  A("media", HETZNER_SRV_COOLIFY_IPv4, TTL(1)),
+  AAAA("media", HETZNER_SRV_COOLIFY_IPv6 + "1001", TTL(1)),
 
   // github-pages
   // add a CNAME file
@@ -60,6 +62,7 @@ D(
   CNAME("pixelfont", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("label-maker", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("esg", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("mediator", GITHUB_SIGNALWERK_CNAME, TTL(1)),
 
   // sfgz IAD
   CNAME("IAD2017", GITHUB_SIGNALWERK_CNAME, TTL(1)),
