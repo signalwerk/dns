@@ -96,6 +96,13 @@ D(
     TTL(1)
   ),
 
+  // ChatGPT (Open AI) domain verification 
+  TXT(
+    "@",
+    "openai-domain-verification=dv-wwzn4AXJy3U7WQQMqJlfhgji",
+    TTL(1)
+  ),
+
   // local testing
   // The entire sub domain name *.local.signalwerk.ch point to 127.0.0.1
   // https://www.rfc-editor.org/rfc/rfc6761.html
