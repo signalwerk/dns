@@ -61,6 +61,7 @@ D(
   CNAME("dos-day-2021", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("digital-typography", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("ddos2022", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("ddos2023", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("dosday2022", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("zeteco2017", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("fahrplan.zeteco2017", GITHUB_SIGNALWERK_CNAME, TTL(1)),
@@ -70,6 +71,9 @@ D(
   CNAME("marc-media", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("mediator", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("marc", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("ai-text", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("sos", GITHUB_SIGNALWERK_CNAME, TTL(1)),
+  CNAME("cross-origin-link", GITHUB_SIGNALWERK_CNAME, TTL(1)),
 
   // sfgz IAD
   CNAME("IAD2017", GITHUB_SIGNALWERK_CNAME, TTL(1)),
@@ -90,6 +94,13 @@ D(
   TXT(
     "_keybase_pages.pad",
     "kbp=/keybase/private/signalwerk,kbpbot/pad",
+    TTL(1)
+  ),
+
+  // ChatGPT (Open AI) domain verification 
+  TXT(
+    "@",
+    "openai-domain-verification=dv-wwzn4AXJy3U7WQQMqJlfhgji",
     TTL(1)
   ),
 
