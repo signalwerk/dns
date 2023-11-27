@@ -5,5 +5,5 @@ D(
 
   // root & www
   GITHUB_A,
-  CNAME("www", "@", TTL(1), { cloudflare_proxy: "on" })
+  CNAME("www", "@", TTL(1))
 );
