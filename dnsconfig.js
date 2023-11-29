@@ -10,6 +10,7 @@ require("infrastructure/hetzner.js");
 require("domains/moire.js");
 require("domains/signalwerk.js");
 require("domains/lenin.js");
+require("domains/newnion.js");
 require("domains/caminantes-grafico.js");
 require("domains/grafikklang.js");
 
