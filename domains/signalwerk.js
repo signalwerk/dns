@@ -30,6 +30,9 @@ D(
   AAAA("typesense", HETZNER_SRV_COOLIFY_IPv6 + "1000", TTL(1)),
   A("media", HETZNER_SRV_COOLIFY_IPv4, TTL(1)),
   AAAA("media", HETZNER_SRV_COOLIFY_IPv6 + "1001", TTL(1)),
+  // LanguageTool
+  A("lt", HETZNER_SRV_COOLIFY_IPv4, TTL(1)),
+  AAAA("lt", HETZNER_SRV_COOLIFY_IPv6 + "1001", TTL(1)),
 
   // github-pages
   // add a CNAME file
