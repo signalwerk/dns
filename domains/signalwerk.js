@@ -38,6 +38,11 @@ D(
   // add a CNAME file
   // add the full domain-name on one line (without http)
   // xxx.signalwerk.ch
+  TXT(
+    "_github-pages-challenge-signalwerk",
+    "873370cf4183399ffd8bd7a945059b",
+    TTL(1)
+  ),
   CNAME("paramatters", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("webtypo", GITHUB_SIGNALWERK_CNAME, TTL(1)),
   CNAME("typesetting", GITHUB_SIGNALWERK_CNAME, TTL(1)),
