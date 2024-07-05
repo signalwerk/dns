@@ -111,12 +111,15 @@ D(
     TTL(1)
   ),
 
-  // ChatGPT (Open AI) domain verification 
-  TXT(
-    "@",
-    "openai-domain-verification=dv-wwzn4AXJy3U7WQQMqJlfhgji",
-    TTL(1)
-  ),
+  // cloudflare Workers
+  // CF_WORKER_ROUTE("paged.worker.signalwerk.ch/*", "pagedjs"),
+  AAAA("paged.worker", "100::", TTL(1), {
+    cloudflare_proxy: "on",
+    id: "d4e5603c379125a33c8a2398139dc103"
+  }),
+
+  // ChatGPT (Open AI) domain verification
+  TXT("@", "openai-domain-verification=dv-wwzn4AXJy3U7WQQMqJlfhgji", TTL(1)),
 
   // local testing
   // The entire sub domain name *.local.signalwerk.ch point to 127.0.0.1

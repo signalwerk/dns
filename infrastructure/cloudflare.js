@@ -1,1 +1,1 @@
-var CLOUDFLARE = NewDnsProvider("cloudflare", "CLOUDFLAREAPI");
+var CLOUDFLARE = NewDnsProvider("cloudflare");
