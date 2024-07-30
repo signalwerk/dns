@@ -10,3 +10,10 @@ var GITHUB_A = [
   A("@", GITHUB_IP3_A, TTL(1)),
   A("@", GITHUB_IP4_A, TTL(1))
 ];
+
+var GITHUB_A_PROXY = [
+  A("@", GITHUB_IP1_A, TTL(1), { cloudflare_proxy: "on" }),
+  A("@", GITHUB_IP2_A, TTL(1), { cloudflare_proxy: "on" }),
+  A("@", GITHUB_IP3_A, TTL(1), { cloudflare_proxy: "on" }),
+  A("@", GITHUB_IP4_A, TTL(1), { cloudflare_proxy: "on" })
+];
