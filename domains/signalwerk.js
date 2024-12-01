@@ -138,6 +138,9 @@ D(
   // https://www.rfc-editor.org/rfc/rfc6761.html
   A("*.localhost", "127.0.0.1", TTL(1)),
 
+  // vpn clients
+  A("pi-2024.b585.vpn", "100.85.83.100", TTL(1)),
+
   // MAIL
   A("mx0", "176.28.14.63", TTL(1)),
   MX("@", 50, "mx0.signalwerk.ch.", TTL(1)),
